@@ -2,11 +2,11 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const prepareHeader = async (headers: Headers) => {
   const access_token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRvZmFtaW45Ml81NDI1Mzg2NjgiLCJlbWFpbCI6bnVsbCwicGhvbmVfbnVtYmVyIjpudWxsLCJ0ZWxlZ3JhbV9pZCI6IjU0MjUzODY2OCIsImlkIjoiZGM5YjdmZWIxNGMwNGNiMWFlMmJiNWEyMmMzOTllM2YiLCJwcm9maWxlX3BpY3R1cmUiOiJodHRwczovL3NtLmlnbi5jb20vaWduX25vcmRpYy9jb3Zlci9hL2F2YXRhci1nZW4vYXZhdGFyLWdlbmVyYXRpb25zX3Byc3ouanBnIiwiaXNfYWN0aXZhdGVkIjp0cnVlLCJyb2xlIjoiVVNFUiIsInNpZ251cF9wbGF0Zm9ybSI6InRlbGVncmFtX21pbmkiLCJleHAiOjE3MzIxNTY5MzR9.5FGB55uldBdA93NG9AT0ORpBezs8i8SjDaCcGFXaMLk";
+    access_token;
   headers.set("Authorization", `Bearer ${access_token}`);
   headers.set("accept", "application/json");
   headers.set("Content-Type", "application/json");
-  headers.set("X-API-TOKEN", "6e4f231a432f98ac21b48a7dcb167834");
+  headers.set("X-API-TOKEN", X-api);
   return headers;
 };
 export const usersApi = createApi({
